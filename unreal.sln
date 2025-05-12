@@ -1,0 +1,22 @@
+#pragma once
+
+#include "CoreMinimal.h"
+#include "Engine/DataTable.h"
+#include "MyDataPoint.generated.h"
+
+USTRUCT(BlueprintType)
+struct FMyDataPoint : public FTableRowBase
+{
+	GENERATED_BODY()
+
+	// JSON 키와 일치시킵니다.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float X;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float Y;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float Z;
+};
+
